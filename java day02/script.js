@@ -111,3 +111,12 @@ movies.push({
   releaseDate: "2008-07-16",
 });
 console.log(movies.length);
+
+function showMessage() {
+  console.log("주문 완료");
+}
+function orderCoffee(menu, callback) {
+  console.log(`${menu}주문 접수`);
+}
+callback();
+orderCoffee("아메리카노", showMessage);
