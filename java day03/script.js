@@ -67,3 +67,20 @@ movieList.append(movieItem2);
 
 //08번
 movieItem2.remove();
+
+function showMessage() {
+  console.log("영화 정보를 불러옵니다.");
+ } 
+
+ showMessage(); 
+ showMessage(); 
+
+ function showMovie(title) {
+  console.log(title); 
+ }
+ showMovie("인셉션");
+
+ function calculateTicketPrice(price, count) {
+  console.log(price * count);
+ } 
+ calculateTicketPrice(19900,5);

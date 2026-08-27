@@ -56,7 +56,7 @@ console.log(movie.isFavorite);
 // 02번 문제
 const voteAverage = 8.4;
 const ratingText = voteAverage >= 8 ? "추천 영화" : "일반 영화";
-
+ 
 if (voteAverage >= 8) {
   console.log("추천 영화");
 } else {
