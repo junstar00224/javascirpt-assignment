@@ -1,0 +1,39 @@
+const movie = {
+  id: 550,
+  title: "Fight Club",
+  vote_average: 8.4,
+  vote_count: 0,
+  detail: {
+    runtime: 139,
+    // director: "David Fincher"
+  },
+};
+
+//01.객체 구조 분해 할당하기
+const genres = ["Drama", "Thriller", "Crime"];
+
+const {title,vote_average} = movie;
+console.log(`제목:${title}`);
+console.log(`평점:${vote_average}`);
+
+//02.새로운 변수 이름으로 할당하기
+const {title: movieTitle} = movie;
+console.log(movieTitle);
+
+//03.배열 구조 분해 할당하기
+const [firstGenres,secondGenres] = genres
+console.log(firstGenres);
+console.log(secondGenres);
+
+//04.존재하지 않는 속성 안전하게 가져오기
+const director = movie.detail?.director;
+console.log(director);
+
+//05.기본값 사용하기
+const directorName = director ?? "감독 정보 없음"
+console.log(directorName);
+
+//06.||와 ??의 차이 확인하기
+const {vote_count:movieVote_Count}= movie;
+console.log(movieVote_Count);
+// const movieVote_Count = vote_count ?? 100
